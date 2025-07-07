@@ -1,4 +1,4 @@
-import css from "./VoteStatus.module.css"
+import css from "./VoteStats.module.css"
 import type {Votes} from "../../types/type";
 import Notification from "../Notification/Notification";
 
@@ -6,7 +6,7 @@ interface VoteStatsProps {
     votes: Votes;
   }
 
-export default function VoteStatus ({votes}: VoteStatsProps) { 
+export default function VoteStats ({votes}: VoteStatsProps) { 
     const {good, neutral, bad} = votes
     const totalVotes: number = good + neutral + bad;
     const positiveRate: number = totalVotes ? Math.round((votes.good / totalVotes) * 100) : 0;
