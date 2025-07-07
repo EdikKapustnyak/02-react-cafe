@@ -1,6 +1,6 @@
 import css from "./VoteStatus.module.css"
 import type {Votes} from "../../types/type";
-import Natification from "../Natification/Natification";
+import Notification from "../Notification/Notification";
 
 interface VoteStatsProps {
     votes: Votes;
@@ -21,7 +21,7 @@ export default function VoteStatus ({votes}: VoteStatsProps) {
         </div>
     )}  else { 
         return (
-            <Natification/>
+            <Notification/>
         )
     }
 }
