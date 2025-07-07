@@ -1,5 +1,5 @@
 import css from "./VoteStatus.module.css"
-import type {Votes} from "../types/type";
+import type {Votes} from "../../types/type";
 import Natification from "../Natification/Natification";
 
 interface VoteStatsProps {
