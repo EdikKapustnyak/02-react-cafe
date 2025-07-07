@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import css from './App.module.css'
 import CafeInfo from '../CafeInfo/CafeInfo'
-import VoteOption from '../VoteOption/VoteOption'
+import VoteOptions from '../VoteOptions/VoteOptions'
 import VoteStatus from '../VoteStatus/VoteStatus'
 import type { VoteKey, Votes } from '../../types/type';
 function App() {
@@ -32,7 +32,7 @@ function App() {
     <>
      <div className={css.app}>
       <CafeInfo/>
-      <VoteOption onVote={handleVote} onReset={resetVotes} canReset={canReset}/>
+      <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={canReset}/>
       <VoteStatus votes={votes}/>
       </div> 
     </>

@@ -1,4 +1,4 @@
-import css from "./VoiteOption.module.css"
+import css from "./VoiteOptions.module.css"
 import type { VoteKey } from "../../types/type"
 
 interface VoteOptionsProps { 
@@ -7,7 +7,7 @@ interface VoteOptionsProps {
     canReset: boolean
 }
 
-export default function VoteOption ({onVote, onReset, canReset}: VoteOptionsProps) { 
+export default function VoteOptions ({onVote, onReset, canReset}: VoteOptionsProps) { 
 
     return (
         <div className={css.container}>
