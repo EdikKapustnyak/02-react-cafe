@@ -1,4 +1,4 @@
-import css from "./VoiteOptions.module.css"
+import css from "./VoteOptions.module.css"
 import type { VoteKey } from "../../types/votes"
 
 interface VoteOptionsProps { 
@@ -17,6 +17,5 @@ export default function VoteOptions ({onVote, onReset, canReset}: VoteOptionsPro
             {canReset && 
             (<button className={`${css.button} ${css.reset}`} onClick={onReset}>Reset</button>)}
         </div>
-
     )
 }
