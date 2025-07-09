@@ -1,4 +1,4 @@
-export type VoteKey = 'good' | 'neutral' | 'bad';
+export type VoteType = 'good' | 'neutral' | 'bad';
 
 export interface Votes {
     good: number
